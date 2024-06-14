@@ -18,7 +18,7 @@ public class MineSweeper {
     private JButton reset;
     private JButton giveUp;
 
-    // use the same ActionListener for all buttons so we don't have to create hundreds of them
+    // use the same ActionListener for all buttons, so we don't have to create hundreds of them
     private final ActionListener actionListener = e -> {
         Object source = e.getSource();
 
@@ -188,7 +188,7 @@ public class MineSweeper {
             positions.remove(choice);
         }
 
-        // initlaize neighbor counts
+        // initialize neighbor counts
         for (int row = 0; row < gridSize; row++) {
             for (int col = 0; col < gridSize; col++) {
                 if (!cells[row][col].isMine()) {
